@@ -1,0 +1,22 @@
+{
+  "name": "react-native-platform-styles-example",
+  "displayName": "PlatformStyles Example",
+  "expo": {
+    "name": "react-native-platform-styles-example",
+    "slug": "react-native-platform-styles-example",
+    "description": "Example app for react-native-platform-styles",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
