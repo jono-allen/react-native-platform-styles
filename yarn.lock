@@ -7935,9 +7935,10 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1, react-is@^16.8.4, react-i
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-"react-native-ios-kit@https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac":
-  version "0.0.25"
-  resolved "https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac"
+react-native-ios-kit@*:
+  version "0.0.22"
+  resolved "https://registry.yarnpkg.com/react-native-ios-kit/-/react-native-ios-kit-0.0.22.tgz#302ce2948c4b76cce11289ac67e83cfd2f6636a4"
+  integrity sha512-roc5KTzRyWk2xnBo5Wl0W5IOk2+pvdQZsn0i0YuPT59/f/vuTtUFGZRrPBbK3QpG/3Nyipy2NO1qQBH8clVrfQ==
   dependencies:
     "@callstack/react-theme-provider" "^3.0.5"
     babel-plugin-module-resolver "^4.0.0"
