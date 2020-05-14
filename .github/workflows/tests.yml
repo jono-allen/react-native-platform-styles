@@ -1,4 +1,4 @@
-name: Build and test
+name: Tests
 
 on:
   push:
@@ -18,9 +18,9 @@ jobs:
           node-version: 12
       - name: yarn install
         run: yarn install
-      - name: Lint 💅
-        run: |
-        yarn run lint
-        yarn run tsc
       - name: Tests 🔬
         run: yarn run test
+      - name: Lint 💅
+        run: yarn run lint
+      - name: Typecheck 💅
+        run: yarn run tsc
