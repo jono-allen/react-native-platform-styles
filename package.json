@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "test": "jest",
-    "typescript": "tsc --noEmit",
+    "tsc": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts,.tsx .",
     "prepare": "bob build",
     "release": "release-it",
@@ -42,9 +42,13 @@
     "@react-native-community/bob": "^0.14.2",
     "@react-native-community/eslint-config": "^1.1.0",
     "@release-it/conventional-changelog": "^1.1.4",
+    "@testing-library/react-native": "^5.0.3",
+    "@types/color": "^3.0.1",
     "@types/jest": "^25.2.1",
+    "@types/node": "^14.0.1",
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.7",
+    "babel-jest": "^26.0.1",
     "commitlint": "^8.3.5",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
@@ -55,24 +59,32 @@
     "prettier": "^2.0.5",
     "react": "~16.9.0",
     "react-native": "~0.61.5",
+    "react-native-testing-library": "^1.13.2",
+    "react-native-vector-icons": "^6.6.0",
+    "react-test-renderer": "^16.13.1",
     "release-it": "^13.5.8",
     "typescript": "^3.8.3"
   },
   "peerDependencies": {
     "react": "*",
-    "react-native": "*"
+    "react-native": "*",
+    "react-native-vector-icons": "*"
   },
   "jest": {
     "preset": "react-native",
+    "cacheDirectory": "./cache/jest",
     "modulePathIgnorePatterns": [
       "<rootDir>/example/node_modules",
       "<rootDir>/lib/"
+    ],
+    "watchPathIgnorePatterns": [
+      "__fixtures__\\/[^/]+\\/(output|error)\\.js"
     ]
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript"
+      "pre-commit": "yarn lint && yarn tsc"
     }
   },
   "eslintConfig": {
@@ -93,7 +105,10 @@
       ]
     }
   },
-  "eslintIgnore": ["node_modules/", "lib/"],
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true,
@@ -121,6 +136,15 @@
   "@react-native-community/bob": {
     "source": "src",
     "output": "lib",
-    "targets": ["commonjs", "module", "typescript"]
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  },
+  "dependencies": {
+    "@types/react-native-vector-icons": "^6.4.5",
+    "react-native-ios-kit": "https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac",
+    "react-native-paper": "^3.10.1"
   }
 }

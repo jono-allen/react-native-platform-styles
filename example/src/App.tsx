@@ -1,17 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import PlatformStyles from 'react-native-platform-styles';
+import { StyleSheet, View } from 'react-native';
+import { Button } from 'react-native-platform-styles';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    PlatformStyles.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Button onPress={() => {}}>Test</Button>
     </View>
   );
 }

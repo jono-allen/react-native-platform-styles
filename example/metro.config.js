@@ -5,9 +5,12 @@ const pak = require('../package.json');
 
 const root = path.resolve(__dirname, '..');
 
-const modules = Object.keys({
-  ...pak.peerDependencies,
-});
+const modules = [
+  '@babel/runtime',
+  '@expo/vector-icons',
+  ...Object.keys(pak.dependencies),
+  ...Object.keys(pak.peerDependencies),
+];
 
 module.exports = {
   projectRoot: __dirname,
