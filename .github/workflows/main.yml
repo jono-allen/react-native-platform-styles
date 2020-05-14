@@ -1,4 +1,4 @@
-name: Build and test
+name: Tests
 
 on:
   push:
@@ -21,7 +21,6 @@ jobs:
       - name: Tests 🔬
         run: yarn run test
       - name: Lint 💅
-        run: |
-        yarn run lint
-        yarn run tsc
-
+        run: yarn run lint
+      - name: Typecheck 💅
+        run: yarn run tsc
