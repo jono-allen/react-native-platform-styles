@@ -1,4 +1,12 @@
-# react-native-platform-styles
+<p align="center">
+  A wrapper for react-native-paper and react-native-ios-kit that use's react native paper for android and ios kit for IOS
+</p>
+
+---
+
+![Build and test](https://github.com/jono-allen/react-native-platform-styles/workflows/Build%20and%20test/badge.svg)
+
+# React-native-platform-styles
 
 A wrapper for react-native-paper and react-native-ios-kit
 
@@ -11,11 +19,16 @@ npm install react-native-platform-styles
 ## Usage
 
 ```js
-import PlatformStyles from "react-native-platform-styles";
+import { Button } from "react-native-platform-styles";
 
 // ...
 
-const result = await PlatformStyles.multiply(3, 7);
+<Button
+  inline // will render on ios inline
+  compact // will render on android compact
+  onPress={()=>{}}>
+  Click me
+  </Button>
 ```
 
 ## Contributing
