@@ -148,7 +148,7 @@
     "lodash": "4.17.15"
   },
   "dependencies": {
-    "react-native-ios-kit": "https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac",
+    "react-native-ios-kit": "*",
     "react-native-paper": "^3.10.1"
   }
 }
