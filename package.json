@@ -69,6 +69,7 @@
     "react": "*",
     "react-native": "*",
     "react-native-vector-icons": "*",
+    "react-native-ios-kit": "https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac",
     "react-native-paper": "*"
   },
   "jest": {

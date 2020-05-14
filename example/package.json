@@ -17,7 +17,7 @@
     "react": "~16.9.0",
     "react-dom": "~16.9.0",
     "react-native": "~0.61.5",
-    "react-native-ios-kit": "^0.0.22",
+    "react-native-ios-kit": "https://github.com/jono-allen/react-native-ios-kit#6291af0d31a96f557654f8aa204700e6d4ec8bac",
     "react-native-paper": "^3.10.1",
     "react-native-unimodules": "~0.9.0",
     "react-native-vector-icons": "^6.6.0",
